@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4ade80;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.contact-btn {
+    background-color: transparent;
+    border: 1px solid #4ade80;
+    color: #4ade80;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 20px;
+}
+.social-icons a {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.content {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+.cta-btn {
+    background-color: #4ade80;
+    color: #0f172a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.email {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+}
+.project-section {
+    margin-top: 100px;
+}
+.project-section h2 {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+.project-section h2 span {
+    color: #4ade80;
+    margin-right: 15px;
+}
+.project-section h2::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #4ade80;
+    margin-left: 20px;
+}
+.project-card {
+    display: flex;
+    margin-top: 40px;
+}
+.project-image {
+    flex: 0 0 60%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project-info {
+    flex: 0 0 40%;
+    padding-left: 40px;
+}
+.project-title {
+    font-size: 14px;
+    color: #4ade80;
+    margin-bottom: 10px;
+}
+.project-name {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.project-description {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.project-tags {
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.project-tags span {
+    margin-right: 15px;
+}
+.project-link {
+    color: #4ade80;
+    text-decoration: none;
+    margin-left: 10px;
+}

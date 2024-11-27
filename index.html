@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Yacine - Flutter Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+        /* Previous styles remain the same until projects section */
+        :root {
+            --primary-color: #007FFF;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f5f5f5;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        header {
+            background: var(--dark-bg);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        #about {
+            background: var(--light-bg);
+        }
+
+        /* Updated Project Cards Styling */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 0 1rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .project-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: var(--light-bg);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        /* Rest of the previous styles */
+        #skills {
+            background: var(--light-bg);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .education-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-card h3 {
+            color: var(--primary-color);
+        }
+
+        .languages-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .language-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .contact-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section remains the same -->
+    <header>
+        <div class="profile-info">
+            <h1>Hamza Ferradji</h1>
+            <p>Flutter Developer</p>
+            <div class="contact-links">
+                <a href="tel:0781776365"><i class="fas fa-phone"></i> 0781776365</a>
+                <a href="mailto:hamza.ycne@gmail.com"><i class="fas fa-envelope"></i> hamza.ycne@gmail.com</a>
+                <a href="https://www.linkedin.com/in/hamza-ycn-b187801a7/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/hamzaycn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About section remains the same -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+            Flutter Developer with 2 years of experience in Clean Architecture, Firebase, and REST APIs. 
+            Proficient in Dart, PHP, and Python, with strong problem-solving skills.
+        </p>
+    </section>
+
+    <!-- Updated Projects section with images -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="task_wise.png" alt="Task Wise Application" class="project-image">
+                <div class="project-content">
+                    <h3>Task Wise Application</h3>
+                    <p>A Task Manager app built with Flutter, featuring task creation, deadlines, reminders, and categorization. 
+                    Implemented using Clean Architecture with GetX for state management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">GetX</span>
+                        <span class="tech-tag">Clean Architecture</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="podcast.png" alt="Podcast Application" class="project-image">
+                <div class="project-content">
+                    <h3>Podcast Application</h3>
+                    <p>Created a podcast app using Flutter with Clean Architecture principles and Firebase as the backend, 
+                    delivering seamless real-time updates.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Clean Architecture</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="file_manager.png" alt="File Management Application" class="project-image">
+                <div class="project-content">
+                    <h3>File Management Application</h3>
+                    <p>Developed a file management system with GetX for efficient state management and file handling in Flutter, 
+                    improving user experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">GetX</span>
+                        <span class="tech-tag">File Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="absence.png" alt="Student Attendance Management System" class="project-image">
+                <div class="project-content">
+                    <h3>Student Attendance Management System</h3>
+                    <p>Developed a system for managing student attendance using PHP, phpMyAdmin, and SQL, enabling streamlined 
+                    attendance tracking and reporting.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">phpMyAdmin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the sections remain the same -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    <li>Dart</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks & Tools</h3>
+                <ul class="skill-list">
+                    <li>Flutter</li>
+                    <li>GetX</li>
+                    <li>Provider</li>
+                    <li>Firebase</li>
+                    <li>Git</li>
+                  
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Architecture & Design</h3>
+                <ul class="skill-list">
+                    <li>Clean Architecture</li>
+                    <li>UML</li>
+                    <li>REST API</li>
+                    <li>System Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="education-card">
+                <h3>Master's Degree in Systems Engineering and Web Technologies</h3>
+                <p>University of Medea | 2024</p>
+                <p>Relevant Coursework: Advanced Web Technologies, System Design, Machine Learning</p>
+            </div>
+            <div class="education-card">
+                <h3>Bachelor's Degree in Information Systems</h3>
+                <p>University of Medea | 2022</p>
+                <p>Relevant Coursework: Algorithme, Databases, System Design, UML</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages">
+        <h2 class="section-title">Languages</h2>
+        <div class="languages-list">
+            <div class="language-card">
+                <h3>Arabic</h3>
+                <p>Fluent</p>
+            </div>
+            <div class="language-card">
+                <h3>English</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="language-card">
+                <h3>French</h3>
+                <p>Intermediate</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to project cards on scroll
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
