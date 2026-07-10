@@ -109719,7 +109719,7 @@ s.rL()
 return s.np()},
 $S:740}
 A.Vm.prototype={
-L(a){return new A.Fv("/login","Portfolio - Ferradji Hamza",$.b6e(),$.b6d(),B.DB,!1,B.DK,new A.Gl(),$.b6c(),null)}}
+L(a){return new A.Fv("/","Portfolio - Ferradji Hamza",$.b6e(),$.b6d(),B.DB,!1,B.DK,new A.Gl(),$.b6c(),null)}}
 A.Ep.prototype={
 gil(){return!0},
 ck(a,b,c,d){var s,r,q,p,o,n,m=null,l=null
